@@ -12,7 +12,61 @@
 		8E826F221CA4C07B008893D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F201CA4C07B008893D6 /* Main.storyboard */; };
 		8E826F241CA4C07B008893D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F231CA4C07B008893D6 /* Assets.xcassets */; };
 		8E826F271CA4C07B008893D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F251CA4C07B008893D6 /* LaunchScreen.storyboard */; };
+		8E826F341CA4C11E008893D6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F321CA4C11E008893D6 /* Interface.storyboard */; };
+		8E826F361CA4C11E008893D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F351CA4C11E008893D6 /* Assets.xcassets */; };
+		8E826F3D1CA4C11F008893D6 /* Watch sLight Complication Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E826F3C1CA4C11F008893D6 /* Watch sLight Complication Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E826F421CA4C11F008893D6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E826F411CA4C11F008893D6 /* InterfaceController.swift */; };
+		8E826F441CA4C11F008893D6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E826F431CA4C11F008893D6 /* ExtensionDelegate.swift */; };
+		8E826F461CA4C11F008893D6 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E826F451CA4C11F008893D6 /* GlanceController.swift */; };
+		8E826F481CA4C11F008893D6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E826F471CA4C11F008893D6 /* ComplicationController.swift */; };
+		8E826F4A1CA4C11F008893D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F491CA4C11F008893D6 /* Assets.xcassets */; };
+		8E826F4E1CA4C11F008893D6 /* Watch sLight Complication.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8E826F301CA4C11E008893D6 /* Watch sLight Complication.app */; };
+		8E826F581CA4C57B008893D6 /* sketch icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F571CA4C57B008893D6 /* sketch icon.png */; };
+		8E826F591CA4CE7E008893D6 /* sketch icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F571CA4C57B008893D6 /* sketch icon.png */; };
+		8E826F5A1CA4CE7F008893D6 /* sketch icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F571CA4C57B008893D6 /* sketch icon.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E826F3E1CA4C11F008893D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E826F111CA4C07B008893D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E826F3B1CA4C11F008893D6;
+			remoteInfo = "Watch sLight Complication Extension";
+		};
+		8E826F4C1CA4C11F008893D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E826F111CA4C07B008893D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E826F2F1CA4C11E008893D6;
+			remoteInfo = "Watch sLight Complication";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E826F521CA4C11F008893D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E826F3D1CA4C11F008893D6 /* Watch sLight Complication Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E826F561CA4C11F008893D6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8E826F4E1CA4C11F008893D6 /* Watch sLight Complication.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E826F191CA4C07B008893D6 /* sLight Complication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sLight Complication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +76,29 @@
 		8E826F231CA4C07B008893D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E826F261CA4C07B008893D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E826F281CA4C07B008893D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E826F301CA4C11E008893D6 /* Watch sLight Complication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch sLight Complication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E826F331CA4C11E008893D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8E826F351CA4C11E008893D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E826F371CA4C11E008893D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E826F3C1CA4C11F008893D6 /* Watch sLight Complication Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch sLight Complication Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E826F411CA4C11F008893D6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8E826F431CA4C11F008893D6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8E826F451CA4C11F008893D6 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		8E826F471CA4C11F008893D6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8E826F491CA4C11F008893D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E826F4B1CA4C11F008893D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E826F571CA4C57B008893D6 /* sketch icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sketch icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8E826F161CA4C07B008893D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E826F391CA4C11F008893D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				8E826F1B1CA4C07B008893D6 /* sLight Complication */,
+				8E826F311CA4C11E008893D6 /* Watch sLight Complication */,
+				8E826F401CA4C11F008893D6 /* Watch sLight Complication Extension */,
 				8E826F1A1CA4C07B008893D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				8E826F191CA4C07B008893D6 /* sLight Complication.app */,
+				8E826F301CA4C11E008893D6 /* Watch sLight Complication.app */,
+				8E826F3C1CA4C11F008893D6 /* Watch sLight Complication Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +141,30 @@
 			path = "sLight Complication";
 			sourceTree = "<group>";
 		};
+		8E826F311CA4C11E008893D6 /* Watch sLight Complication */ = {
+			isa = PBXGroup;
+			children = (
+				8E826F321CA4C11E008893D6 /* Interface.storyboard */,
+				8E826F351CA4C11E008893D6 /* Assets.xcassets */,
+				8E826F571CA4C57B008893D6 /* sketch icon.png */,
+				8E826F371CA4C11E008893D6 /* Info.plist */,
+			);
+			path = "Watch sLight Complication";
+			sourceTree = "<group>";
+		};
+		8E826F401CA4C11F008893D6 /* Watch sLight Complication Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E826F411CA4C11F008893D6 /* InterfaceController.swift */,
+				8E826F431CA4C11F008893D6 /* ExtensionDelegate.swift */,
+				8E826F451CA4C11F008893D6 /* GlanceController.swift */,
+				8E826F471CA4C11F008893D6 /* ComplicationController.swift */,
+				8E826F491CA4C11F008893D6 /* Assets.xcassets */,
+				8E826F4B1CA4C11F008893D6 /* Info.plist */,
+			);
+			path = "Watch sLight Complication Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +175,51 @@
 				8E826F151CA4C07B008893D6 /* Sources */,
 				8E826F161CA4C07B008893D6 /* Frameworks */,
 				8E826F171CA4C07B008893D6 /* Resources */,
+				8E826F561CA4C11F008893D6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8E826F4D1CA4C11F008893D6 /* PBXTargetDependency */,
 			);
 			name = "sLight Complication";
 			productName = "sLight Complication";
 			productReference = 8E826F191CA4C07B008893D6 /* sLight Complication.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8E826F2F1CA4C11E008893D6 /* Watch sLight Complication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E826F531CA4C11F008893D6 /* Build configuration list for PBXNativeTarget "Watch sLight Complication" */;
+			buildPhases = (
+				8E826F2E1CA4C11E008893D6 /* Resources */,
+				8E826F521CA4C11F008893D6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E826F3F1CA4C11F008893D6 /* PBXTargetDependency */,
+			);
+			name = "Watch sLight Complication";
+			productName = "Watch sLight Complication";
+			productReference = 8E826F301CA4C11E008893D6 /* Watch sLight Complication.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8E826F3B1CA4C11F008893D6 /* Watch sLight Complication Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E826F4F1CA4C11F008893D6 /* Build configuration list for PBXNativeTarget "Watch sLight Complication Extension" */;
+			buildPhases = (
+				8E826F381CA4C11F008893D6 /* Sources */,
+				8E826F391CA4C11F008893D6 /* Frameworks */,
+				8E826F3A1CA4C11F008893D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch sLight Complication Extension";
+			productName = "Watch sLight Complication Extension";
+			productReference = 8E826F3C1CA4C11F008893D6 /* Watch sLight Complication Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +232,12 @@
 				ORGANIZATIONNAME = "Blaine Wilson";
 				TargetAttributes = {
 					8E826F181CA4C07B008893D6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8E826F2F1CA4C11E008893D6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8E826F3B1CA4C11F008893D6 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -113,6 +256,8 @@
 			projectRoot = "";
 			targets = (
 				8E826F181CA4C07B008893D6 /* sLight Complication */,
+				8E826F2F1CA4C11E008893D6 /* Watch sLight Complication */,
+				8E826F3B1CA4C11F008893D6 /* Watch sLight Complication Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,8 +268,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E826F271CA4C07B008893D6 /* LaunchScreen.storyboard in Resources */,
+				8E826F591CA4CE7E008893D6 /* sketch icon.png in Resources */,
 				8E826F241CA4C07B008893D6 /* Assets.xcassets in Resources */,
 				8E826F221CA4C07B008893D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E826F2E1CA4C11E008893D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E826F581CA4C57B008893D6 /* sketch icon.png in Resources */,
+				8E826F361CA4C11E008893D6 /* Assets.xcassets in Resources */,
+				8E826F341CA4C11E008893D6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E826F3A1CA4C11F008893D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E826F4A1CA4C11F008893D6 /* Assets.xcassets in Resources */,
+				8E826F5A1CA4CE7F008893D6 /* sketch icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +305,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8E826F381CA4C11F008893D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E826F441CA4C11F008893D6 /* ExtensionDelegate.swift in Sources */,
+				8E826F481CA4C11F008893D6 /* ComplicationController.swift in Sources */,
+				8E826F421CA4C11F008893D6 /* InterfaceController.swift in Sources */,
+				8E826F461CA4C11F008893D6 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E826F3F1CA4C11F008893D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E826F3B1CA4C11F008893D6 /* Watch sLight Complication Extension */;
+			targetProxy = 8E826F3E1CA4C11F008893D6 /* PBXContainerItemProxy */;
+		};
+		8E826F4D1CA4C11F008893D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E826F2F1CA4C11E008893D6 /* Watch sLight Complication */;
+			targetProxy = 8E826F4C1CA4C11F008893D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8E826F201CA4C07B008893D6 /* Main.storyboard */ = {
@@ -157,6 +346,14 @@
 				8E826F261CA4C07B008893D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8E826F321CA4C11E008893D6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E826F331CA4C11E008893D6 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -267,6 +464,68 @@
 			};
 			name = Release;
 		};
+		8E826F501CA4C11F008893D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Watch sLight Complication Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blowbackdesigns.sLight-Complication.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8E826F511CA4C11F008893D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Watch sLight Complication Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blowbackdesigns.sLight-Complication.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		8E826F541CA4C11F008893D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_sLight_Complication_Extension;
+				INFOPLIST_FILE = "Watch sLight Complication/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blowbackdesigns.sLight-Complication.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8E826F551CA4C11F008893D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_sLight_Complication_Extension;
+				INFOPLIST_FILE = "Watch sLight Complication/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blowbackdesigns.sLight-Complication.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +543,22 @@
 			buildConfigurations = (
 				8E826F2C1CA4C07B008893D6 /* Debug */,
 				8E826F2D1CA4C07B008893D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E826F4F1CA4C11F008893D6 /* Build configuration list for PBXNativeTarget "Watch sLight Complication Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E826F501CA4C11F008893D6 /* Debug */,
+				8E826F511CA4C11F008893D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E826F531CA4C11F008893D6 /* Build configuration list for PBXNativeTarget "Watch sLight Complication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E826F541CA4C11F008893D6 /* Debug */,
+				8E826F551CA4C11F008893D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
