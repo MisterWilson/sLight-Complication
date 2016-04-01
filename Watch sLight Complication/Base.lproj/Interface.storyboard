@@ -10,12 +10,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_sLight_Complication" customModuleProvider="target">
                     <items>
-                        <imageView width="1" height="1" alignment="left" id="7n0-W0-egq">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        </imageView>
+                        <picker width="1" height="1" alignment="center" verticalAlignment="center" style="sequence" id="Dwk-Rq-Zdf"/>
                     </items>
                     <connections>
-                        <outlet property="imageContainer" destination="7n0-W0-egq" id="tBz-OD-70L"/>
+                        <outlet property="imagePickerer" destination="Dwk-Rq-Zdf" id="A0b-um-bWb"/>
                     </connections>
                 </controller>
             </objects>

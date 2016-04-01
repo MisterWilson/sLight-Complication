@@ -12,7 +12,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var imageContainer: WKInterfaceImage!
+    @IBOutlet var imagePickerer: WKInterfacePicker!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -21,15 +21,42 @@ class InterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        if let sourceImage = UIImage(named: "sketch icon") {
-            let templateImage = sourceImage.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            imageContainer.setImage(templateImage)
-            imageContainer.setAlpha(1.0)
-            imageContainer.setTintColor(UIColor.blueColor())
+        
+        //
+        //
+        //
+        
+        // Declare array of WK Picker Items
+        var myItems = [WKPickerItem]()
+        let imageNames = ["Pink Screen", "Green Screen"]
+        
+        for name in imageNames {
+            // Create object of type WKPickerItem
+            let pickerItem = WKPickerItem()
             
+            // Populate pickerItem object with WKImage object -> sketch icon file
+            let myImage = WKImage(imageName: name)
+            
+            // Taking image object and populating pickerItem
+            pickerItem.contentImage = myImage
+            
+            // Add picker item to array of items
+            myItems.append(pickerItem)
         }
         
+        
+        imagePickerer.setItems(myItems)
+        
+
+        // This method is called when watch view controller is about to be visible to user
+//        if let sourceImage = UIImage(named: "sketch icon") {
+//            let templateImage = sourceImage.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+//            imageContainer.setImage(templateImage)
+//            imageContainer.setAlpha(1.0)
+//            imageContainer.setTintColor(UIColor.whiteColor())
+//            
+//        }
+//        
         super.willActivate()
     }
 
