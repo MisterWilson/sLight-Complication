@@ -14,15 +14,15 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.Forward, .Backward])
+        handler([CLKComplicationTimeTravelDirections.None])
     }
     
     func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(nil)
+        handler(NSDate())
     }
     
     func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-        handler(nil)
+        handler(NSDate())
     }
     
     func getPrivacyBehaviorForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationPrivacyBehavior) -> Void) {
@@ -33,7 +33,27 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        
+        var entry : CLKComplicationTimelineEntry?
+        let now = NSDate()
+        
+        // Create the template and timeline entry.
+        if complication.family == .ModularSmall {
+            let longText = "💡"
+            let shortText = "💡"
+            
+            let textTemplate = CLKComplicationTemplateModularSmallSimpleText()
+            textTemplate.textProvider = CLKSimpleTextProvider(text: longText, shortText: shortText)
+            
+            // Create the entry.
+            entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: textTemplate)
+        }
+        else {
+            // ...configure entries for other complication families.
+        }
+        
+        // Pass the timeline entry back to ClockKit.
+        handler(entry)
     }
     
     func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {

@@ -23,12 +23,12 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         
         //
-        //
+        // 
         //
         
         // Declare array of WK Picker Items
         var myItems = [WKPickerItem]()
-        let imageNames = ["Pink Screen", "Green Screen"]
+        let imageNames = ["White Screen", "Red Screen"]
         
         for name in imageNames {
             // Create object of type WKPickerItem
