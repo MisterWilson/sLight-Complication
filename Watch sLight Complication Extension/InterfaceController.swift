@@ -13,11 +13,13 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var imagePickerer: WKInterfacePicker!
-    
+        
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        
+        
     }
 
     override func willActivate() {

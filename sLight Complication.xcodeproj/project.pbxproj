@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E033DFA1CE6B21F0028BC99 /* StrobeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E033DF91CE6B21F0028BC99 /* StrobeInterfaceController.swift */; };
+		8E033E021CE6B40D0028BC99 /* frame0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E033E001CE6B40D0028BC99 /* frame0.png */; };
+		8E033E031CE6B40D0028BC99 /* frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E033E011CE6B40D0028BC99 /* frame1.png */; };
 		8E826F1D1CA4C07B008893D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E826F1C1CA4C07B008893D6 /* AppDelegate.swift */; };
 		8E826F1F1CA4C07B008893D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E826F1E1CA4C07B008893D6 /* ViewController.swift */; };
 		8E826F221CA4C07B008893D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F201CA4C07B008893D6 /* Main.storyboard */; };
@@ -24,6 +27,7 @@
 		8E826F581CA4C57B008893D6 /* sketch icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F571CA4C57B008893D6 /* sketch icon.png */; };
 		8E826F591CA4CE7E008893D6 /* sketch icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F571CA4C57B008893D6 /* sketch icon.png */; };
 		8E826F5A1CA4CE7F008893D6 /* sketch icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E826F571CA4C57B008893D6 /* sketch icon.png */; };
+		8E9AA71A1CD2E7FF00337CF4 /* Black Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9AA7191CD2E7FF00337CF4 /* Black Screen.png */; };
 		8E9BF80F1CB73B0700A07AD7 /* White Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9BF80D1CB73B0700A07AD7 /* White Screen.png */; };
 		8E9BF8101CB73B0700A07AD7 /* Red Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E9BF80E1CB73B0700A07AD7 /* Red Screen.png */; };
 /* End PBXBuildFile section */
@@ -71,6 +75,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E033DF91CE6B21F0028BC99 /* StrobeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrobeInterfaceController.swift; sourceTree = "<group>"; };
+		8E033E001CE6B40D0028BC99 /* frame0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame0.png; sourceTree = "<group>"; };
+		8E033E011CE6B40D0028BC99 /* frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame1.png; sourceTree = "<group>"; };
 		8E826F191CA4C07B008893D6 /* sLight Complication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sLight Complication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E826F1C1CA4C07B008893D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E826F1E1CA4C07B008893D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		8E826F491CA4C11F008893D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E826F4B1CA4C11F008893D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E826F571CA4C57B008893D6 /* sketch icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sketch icon.png"; sourceTree = "<group>"; };
+		8E9AA7191CD2E7FF00337CF4 /* Black Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Screen.png"; sourceTree = "<group>"; };
 		8E9BF80D1CB73B0700A07AD7 /* White Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White Screen.png"; sourceTree = "<group>"; };
 		8E9BF80E1CB73B0700A07AD7 /* Red Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Screen.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E033DFB1CE6B37C0028BC99 /* Frames */ = {
+			isa = PBXGroup;
+			children = (
+				8E033E001CE6B40D0028BC99 /* frame0.png */,
+				8E033E011CE6B40D0028BC99 /* frame1.png */,
+			);
+			name = Frames;
+			sourceTree = "<group>";
+		};
 		8E826F101CA4C07B008893D6 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +168,8 @@
 				8E826F321CA4C11E008893D6 /* Interface.storyboard */,
 				8E826F351CA4C11E008893D6 /* Assets.xcassets */,
 				8E9BF80D1CB73B0700A07AD7 /* White Screen.png */,
+				8E9AA7191CD2E7FF00337CF4 /* Black Screen.png */,
+				8E033DFB1CE6B37C0028BC99 /* Frames */,
 				8E9BF80E1CB73B0700A07AD7 /* Red Screen.png */,
 				8E826F571CA4C57B008893D6 /* sketch icon.png */,
 				8E826F371CA4C11E008893D6 /* Info.plist */,
@@ -162,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				8E826F411CA4C11F008893D6 /* InterfaceController.swift */,
+				8E033DF91CE6B21F0028BC99 /* StrobeInterfaceController.swift */,
 				8E826F431CA4C11F008893D6 /* ExtensionDelegate.swift */,
 				8E826F451CA4C11F008893D6 /* GlanceController.swift */,
 				8E826F471CA4C11F008893D6 /* ComplicationController.swift */,
@@ -286,10 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9BF8101CB73B0700A07AD7 /* Red Screen.png in Resources */,
+				8E033E031CE6B40D0028BC99 /* frame1.png in Resources */,
 				8E9BF80F1CB73B0700A07AD7 /* White Screen.png in Resources */,
+				8E9AA71A1CD2E7FF00337CF4 /* Black Screen.png in Resources */,
 				8E826F581CA4C57B008893D6 /* sketch icon.png in Resources */,
 				8E826F361CA4C11E008893D6 /* Assets.xcassets in Resources */,
 				8E826F341CA4C11E008893D6 /* Interface.storyboard in Resources */,
+				8E033E021CE6B40D0028BC99 /* frame0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E826F441CA4C11F008893D6 /* ExtensionDelegate.swift in Sources */,
+				8E033DFA1CE6B21F0028BC99 /* StrobeInterfaceController.swift in Sources */,
 				8E826F481CA4C11F008893D6 /* ComplicationController.swift in Sources */,
 				8E826F421CA4C11F008893D6 /* InterfaceController.swift in Sources */,
 				8E826F461CA4C11F008893D6 /* GlanceController.swift in Sources */,

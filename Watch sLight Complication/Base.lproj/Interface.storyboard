@@ -12,12 +12,33 @@
                     <items>
                         <picker width="1" height="1" alignment="center" verticalAlignment="center" style="sequence" id="Dwk-Rq-Zdf"/>
                     </items>
+                    <menu key="menu" id="e9x-CE-o6H">
+                        <items>
+                            <menuItem title="Solid" icon="maybe" id="6gT-JI-zao"/>
+                            <menuItem title="Strobe" icon="repeat" id="DH8-K5-DdC"/>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="imagePickerer" destination="Dwk-Rq-Zdf" id="A0b-um-bWb"/>
+                        <segue destination="Cyq-Ev-2Ge" kind="relationship" relationship="nextPage" id="yVB-W3-tmF"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="164" y="217"/>
+            <point key="canvasLocation" x="47" y="203"/>
+        </scene>
+        <!--Strobe Interface Controller-->
+        <scene sceneID="HPc-aX-wEf">
+            <objects>
+                <controller id="Cyq-Ev-2Ge" customClass="StrobeInterfaceController" customModule="Watch_sLight_Complication_Extension">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" image="frame" animationDuration="0.20000000000000001" id="928-Rb-KNk"/>
+                    </items>
+                    <connections>
+                        <outlet property="strobe" destination="928-Rb-KNk" id="EiX-LG-4IM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="333"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="rjY-Ar-IMT">
